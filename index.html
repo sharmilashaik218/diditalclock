@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+    }
+    .clock {
+      text-align: center;
+    }
+    .time {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .toggle-format {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .toggle-format:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="time" id="time">00:00:00</div>
+    <button class="toggle-format" id="toggleFormat">Switch to 24-Hour Format</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
